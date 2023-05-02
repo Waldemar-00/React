@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 // import App from './App'
 import MyApp from './MyApp'
+import { Header } from './MyApp'
 // import reportWebVitals from './reportWebVitals';
 //const text = 'lorem ipsum dolor sit amet, consectetur adip'
 //const labelForInput = 'input'
@@ -34,6 +35,7 @@ import MyApp from './MyApp'
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
+    <Header />
     <MyApp />
   </React.StrictMode>
 )
