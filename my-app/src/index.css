@@ -11,3 +11,10 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.divDetails {
+  border: 1px solid pink;
+  cursor: pointer;
+}
+.divDetails:hover {
+  background-color: rgb(241, 241, 241);
+}

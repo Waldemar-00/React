@@ -16,7 +16,16 @@ const component = (
     {/* <div>2 + 2 = { {4} }</div> WILL BE  ERROR*/}
     {/* <div>2 + 2 = { new Date() }</div> WILL BE  ERROR*/}
     <label htmlFor={labelForInput}>Write React </label>
-    <input id='input' type="text" tabIndex="0"/>
+    <input id='input' type="text" tabIndex="0" />
+    <fieldset>
+      <legend>Details</legend>
+      <details>
+        <summary>Summary</summary>
+        <div className="divDetails">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+        <div className="divDetails"> Nostrum magni repellendus officia aliquid, ab itaque illum possimus esse atque quis</div>
+        <div className="divDetails">eum consectetur porro dolores quidem rerum, ad minima </div>
+      </details>
+    </fieldset>
     <button>BUTTON</button>
     <button />
   </div>
