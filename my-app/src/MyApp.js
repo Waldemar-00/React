@@ -1,16 +1,27 @@
-import react from './react.jpg';
-import './App.css';
+import { Component, StrictMode } from 'react'
+import react from './react.jpg'
+import './App.css'
 
 function Image () {
   return <img src={ react } alt="react wallpaper" />
 }
-const Header = () => {
-  const styles = {
-    color: '#2F1755',
-    padding: '0 auto',
-    textAlign: 'center'
+// const Header = () => {
+  // const styles = {
+    // color: '#2F1755',
+    // padding: '0 auto',
+    // textAlign: 'center'
+  // }
+  // return (<h1 style={ styles }>Hello React!</h1>)
+// }
+class Header extends Component {
+  render() {
+    const styles = {
+      color: '#2F1755',
+      padding: '0 auto',
+      textAlign: 'center'
+    }
+    return (<h1 style={ styles }>Hello React!</h1>)
   }
-  return (<h1 style={ styles }>Hello React!</h1>)
 }
 function Button() {
   const textBtn = () => {
@@ -35,7 +46,9 @@ function Button() {
 function MyApp() {
   return (
     <div className="MyApp">
-      <Header />
+      <StrictMode>
+        <Header />
+      </StrictMode>
       <Image />
       <Button />
     </div>
